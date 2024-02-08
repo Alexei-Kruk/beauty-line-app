@@ -1,0 +1,27 @@
+.calendar-container {
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar-title {
+  font-weight: 100;
+}
+
+.calendar-icon__item {
+  margin-left: 24vh;
+}
+
+.calendar__icon {
+  width: 4.5vh;
+}/*# sourceMappingURL=Calendar.css.map */
