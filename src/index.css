@@ -3,8 +3,10 @@
 
 :root {
     --color_icons: #f7adc3;
-    --color_text: #4a4949;
+    --color_text_dark: #4a4949;
+    --color_text_light: #ffffff;
     --bg_color: #fff;
+    --bg_gradient: linear-gradient(to right bottom, #ffd0de, #ffffff)
 }
 
 * {
@@ -20,6 +22,8 @@ body {
     height: 100vh;
 
     box-sizing: border-box;
+
+    background: var(--bg_gradient);
 }
 
 .app {
@@ -27,6 +31,6 @@ body {
     height: 844px;
     border-radius: 40px;
     background: url('./img/background-img.png') center/100% 100% no-repeat fixed;
-    border: 2px solid;
+    border: 4px solid;
     padding: 75px 40px 30px;
 }
