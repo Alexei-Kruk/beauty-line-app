@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Navbar.css"
+import "./Footer.css"
 
 import Calendar_icon from "./img/calendar_icon.svg";
 import Contacts_icon from "./img/contacts_icon.svg";
@@ -9,10 +9,10 @@ import Calendar_with_clock from "./img/clock_icon.svg";
 import Person_icon from "./img/person_circle_icon.svg";
 
 
-export default function Navbar() {
+export default function Footer() {
     return (
         <nav>
-            <div className="navbar-container">
+            <div className="footer-container">
                 <ul className="nav-list">
                     <li className="nav-list__item">
                         <a href="#!" className="nav__link">
@@ -21,6 +21,11 @@ export default function Navbar() {
                                 src={Calendar_icon}
                                 alt="Calendar_icon"
                             />
+                            <span
+                                className="footer-text"
+                            >
+                                Календарь
+                            </span>
                         </a>
                     </li>
                     <li className="nav-list__item">
@@ -30,6 +35,11 @@ export default function Navbar() {
                                 src={Contacts_icon}
                                 alt="Contacts_icon"
                             />
+                            <span
+                                className="footer-text"
+                            >
+                                Контакты
+                            </span>
                         </a>
                     </li>
                     <li className="nav-list__item">
@@ -39,6 +49,11 @@ export default function Navbar() {
                                 src={Add_icon}
                                 alt="Add_icon"
                             />
+                            <span
+                                className="footer-text"
+                            >
+                                Запись
+                            </span>
                         </a>
                     </li>
                     <li className="nav-list__item">
@@ -48,6 +63,11 @@ export default function Navbar() {
                                 src={Calendar_with_clock}
                                 alt="Calendar_with_clock"
                             />
+                            <span
+                                className="footer-text"
+                            >
+                                Бронь
+                            </span>
                         </a>
                     </li>
                     <li className="nav-list__item">
@@ -57,6 +77,11 @@ export default function Navbar() {
                                 src={Person_icon}
                                 alt="Person_icon"
                             />
+                            <span
+                                className="footer-text"
+                            >
+                                Профиль
+                            </span>
                         </a>
                     </li>
                 </ul>

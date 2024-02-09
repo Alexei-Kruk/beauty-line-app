@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import Calendar from "./pages/Calendar/Calendar";
+import Footer from "./components/Footer/Footer";
 
 
 import "./index.css";
@@ -8,9 +9,12 @@ import "./index.css";
 
 export default function App() {
     return (
-        <div className="body app">
-            <Calendar />
-            <Navbar />
+        <div className="app">
+            <Header />
+                <div>
+                    <Calendar />
+                </div>
+            <Footer />
         </div>
     );
 }
