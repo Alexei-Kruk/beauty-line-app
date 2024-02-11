@@ -1,18 +1,24 @@
 import React from "react";
+import { FooterMenu } from "./FooterMenu/FooterMenu";
 
 import "./Footer.css"
 
-import Calendar_icon from "./img/calendar_icon.svg";
-import Contacts_icon from "./img/contacts_icon.svg";
-import Add_icon from "./img/add_icon.svg";
-import Calendar_with_clock from "./img/clock_icon.svg";
-import Person_icon from "./img/person_circle_icon.svg";
-
 
 export default function Footer() {
+    const menuItems = [
+        'Календарь',
+        'Контакты',
+        'Запись',
+        'Бронь',
+        'Рассылка'
+    ];
+
     return (
-        <nav>
-            <div className="footer-container">
+        <nav className="footer-container">
+            <FooterMenu menuItems={menuItems} />
+
+
+            {/* <div className="footer-container">
                 <ul className="nav-list">
                     <li className="nav-list__item">
                         <a href="#!" className="nav__link">
@@ -45,7 +51,7 @@ export default function Footer() {
                     <li className="nav-list__item">
                         <a href="#!" className="nav__link">
                             <img
-                                className="icon__margin icon__add"
+                                className="icon__add"
                                 src={Add_icon}
                                 alt="Add_icon"
                             />
@@ -73,19 +79,19 @@ export default function Footer() {
                     <li className="nav-list__item">
                         <a href="#!" className="nav__link">
                             <img
-                                className="icon__margin"
-                                src={Person_icon}
-                                alt="Person_icon"
+                                className="icon__mail"
+                                src={Mail_icon}
+                                alt="Mail_icon"
                             />
                             <span
                                 className="footer-text"
                             >
-                                Профиль
+                                Рассылка
                             </span>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </nav>
     );
 }
