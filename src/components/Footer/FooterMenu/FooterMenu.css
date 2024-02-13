@@ -1,6 +1,12 @@
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
 .nav-list__item {
   list-style: none;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +17,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .nav__link {
@@ -21,30 +30,18 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  gap: 0.5vh;
 }
 
 .footer-text {
   color: var(--color_text_dark);
   font-size: 14px;
-}
-
-.icon__margin {
-  width: 2.7vh;
-  margin: 1.3vh 0 0.5vh;
-}
-
-.icon__add {
-  width: 2.3vh;
-  margin: 1.3vh 0 0.5vh;
-}
-
-.icon__mail {
-  width: 3.1vh;
-  margin: 1.3vh 0 0vh;
+  margin: 0 1vh;
 }/*# sourceMappingURL=FooterMenu.css.map */
