@@ -36,12 +36,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-decoration: none;
   gap: 0.5vh;
 }
 
 .footer-text {
   color: var(--color_text_dark);
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 1vh;
 }/*# sourceMappingURL=FooterMenu.css.map */

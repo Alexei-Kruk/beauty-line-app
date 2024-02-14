@@ -16,13 +16,14 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     text-decoration: none;
     gap: 0.5vh;
 }
 
 .footer-text {
     color: var(--color_text_dark);
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 1vh;
 }
 
