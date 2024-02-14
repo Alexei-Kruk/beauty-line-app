@@ -11,11 +11,11 @@ import MailIcon from "./img/mail_icon.svg";
 
 export const FooterMenu = (props) => {
     const iconMap = {
-        calendar: CalendarIcon,
-        contacts: ContactsIcon,
-        add: AddIcon,
-        clock: ClockIcon,
-        mail: MailIcon,
+        "Календарь": CalendarIcon,
+        "Контакты": ContactsIcon,
+        "Запись": AddIcon,
+        "Бронь": ClockIcon,
+        "Рассылка": MailIcon,
     };
 
     return (
@@ -29,7 +29,7 @@ export const FooterMenu = (props) => {
                             alt={''}
                         />
                         <span className="footer-text">
-                            {item}
+                            {/* {item} */}
                         </span>
                     </a>
                 </li>

@@ -7,12 +7,13 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ruRU from 'date-fns/locale/ru';
 
 import "./CalendarItem.css";
 
 
 const locales = {
-    "ru-RU": require("date-fns/locale/ru")
+    "ru-RU": ruRU,
 }
 
 const localizer = dateFnsLocalizer({
@@ -20,25 +21,24 @@ const localizer = dateFnsLocalizer({
     parse,
     startOfWeek,
     getDay,
-    locales
+    locales,   
 });
 
 const events = [
     {
-        title: "Big Meeting",
-        allDay: true,
-        start: new Date(2024, 1, 9),
-        end: new Date(2024, 1, 9),
+        title: "Светлана",
+        start: new Date(2024, 1, 15),
+        end: new Date(2024, 1, 15),
     },
     {
-        title: "Vacation",
-        start: new Date(2024, 1, 10),
-        end: new Date(2024, 1, 10),
+        title: "Кристина",
+        start: new Date(2024, 1, 16),
+        end: new Date(2024, 1, 16),
     },
     {
-        title: "Conference",
-        start: new Date(2024, 1, 12),
-        end: new Date(2024, 1, 13),
+        title: "Елена",
+        start: new Date(2024, 1, 19),
+        end: new Date(2024, 1, 19),
     },
 ];
 

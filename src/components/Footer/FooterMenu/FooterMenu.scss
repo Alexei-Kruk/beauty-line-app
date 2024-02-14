@@ -9,6 +9,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: baseline;
+    flex-grow: 1;
 }
 
 .nav__link {
@@ -16,15 +17,19 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     text-decoration: none;
     gap: 0.5vh;
 }
 
-.footer-text {
-    color: var(--color_text_dark);
-    font-size: 13px;
-    margin: 0 1vh;
+// .footer-text {
+//     color: var(--color_text_dark);
+//     font-size: 13px;
+//     margin: 0.5vh 1vh;
+// }
+
+.img {
+    width: 2.7vh;
+    margin: 0.5vh 2.3vh;
 }
 
 // .icon__margin {
