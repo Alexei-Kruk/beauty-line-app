@@ -1,8 +1,57 @@
-@import 'react-big-calendar/lib/sass/styles';
-
 .calendarItem-container {
     height: 63.1vh;
     margin: 2vh -3.42vh 0;
     background-color: var(--bg_color);
+}
+  
+.rbc-event {
+    font-size: 11px;
+    background-color: var(--color_event_manicure);
+}
+  
+.rbc-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.rbc-btn:hover {
+    background-color: #2980b9;
+}
+
+.rbc-header {
+    padding: 1%;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.rbc-toolbar {
+    margin: 0.5vh 0vh 0.5vh ;
+}
+
+.rbc-btn-group {
+    display: flex;
+    margin: 0.3vh 0;
+    border-radius: 4px;
+}
+
+.rbc-toolbar-label {
+    display: none;
+}
+
+.rbc-date-cell {
+    text-align: center;
+}
+
+.rbc-day-bg {
+    background-color: #fff;
+}
+
+.rbc-now {
+    // background-color: #006eff;
+    // color: #fff;
+    // border-radius: 25px;
 }
 

@@ -7,21 +7,37 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ruRU from 'date-fns/locale/ru';
+import moment from 'moment';
+import 'moment/locale/ru';
+import { ru } from "date-fns/locale";
 
 import "./CalendarItem.css";
 
 
+const russianDaysOfWeek = {
+    "Sunday": "ВС",
+    "Monday": "ПН",
+    "Tuesday": "ВТ",
+    "Wednesday": "СР",
+    "Thursday": "ЧТ",
+    "Friday": "ПТ",
+    "Saturday": "СБ",
+};
+
 const locales = {
-    "ru-RU": ruRU,
+    "ru": {
+        ...ru,
+        ...russianDaysOfWeek,
+    },
 }
 
 const localizer = dateFnsLocalizer({
     format,
     parse,
-    startOfWeek,
+    startOfWeek: () => startOfWeek(new Date(), { weekStartsOn: 1 }),
     getDay,
-    locales,   
+    locales,  
+    moment
 });
 
 const events = [
@@ -73,10 +89,26 @@ export default function CalendarItem() {
     return (
         <div className="calendarItem-container">
             <Calendar
+                defaultView={'month'}
+                views={['month', 'week', 'day', 'agenda']}
                 localizer={localizer}
                 events={allEvents}
                 startAccessor="start"
                 endAccessor="end"
+                messages={{
+                    allDay: 'Весь день',
+                    previous: '<',
+                    next: '>',
+                    today: 'Сегодня',
+                    month: 'Месяц',
+                    week: 'Неделя',
+                    day: 'День',
+                    agenda: 'Агенда',
+                    date: 'Дата',
+                    time: 'Время',
+                    event: 'Событие',
+                  }}
+          
             />
         </div>
     );
