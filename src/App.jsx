@@ -12,7 +12,8 @@ import NewsletterForClients from "./pages/NewsletterForClients/NewsletterForClie
 
 import Footer from "./components/Footer/Footer";
 
-import "./index.css";
+import "./styles/index.css";
+import "./styles/colors.css";
 
 
 export default function App() {
@@ -25,9 +26,9 @@ export default function App() {
 
             <Header />
                 <div>
-                    <Calendar />
+                    {/* <Calendar /> */}
                     {/* <Contacts /> */}
-                    {/* <AddNewClient /> */}
+                    <AddNewClient />
                     {/* <WaitingList /> */}
                 </div>
             <Footer />

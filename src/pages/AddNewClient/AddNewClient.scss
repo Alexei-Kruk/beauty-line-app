@@ -3,3 +3,38 @@
     margin: 2vh -3.42vh 0;
     background-color: var(--bg_color);
 }
+
+.form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 3vh;
+}
+
+.form-item {
+    padding: 7px 15px;
+    margin: 1vh;
+    width: 60%;
+
+    font-size: 22px;
+    border-radius: 10px;
+    border-color: darkgray;
+}
+
+.form-btn {
+    background-color: var(--btn_color);
+    color: var(--color_text_light);
+
+    border-color: var(--btn_color);
+    border-radius: 10px;
+
+    font-size: 18px;
+    letter-spacing: 0.5px;
+
+    width: 90%;
+    height: 4.8vh;
+
+    margin: 20vh 0 0 0;
+}

@@ -17,7 +17,7 @@ export default function Header() {
                     />
                 </a>
                 <h1 className="header-title">
-                    Календарь
+                    Запись клиента
                 </h1>
                 <a href="#!" className="header-icon__item">
                     <img

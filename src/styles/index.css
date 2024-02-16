@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root {
-    --color_text_dark: #000000;
-    --color_text_light: #ffffff;
-    --bg_color: #fff;
-    --bg_gradient: linear-gradient(to right bottom, #ffd0de, #ffffff);
-    --bg_app_gradient: linear-gradient(to right, #ff5885, #aa65ff);
-    --color_event_manicure: #ff5a5a;
-    --color_event_pedicure: #ffd83a;
-    --color_event_treatment: #76ff6d;
-    --color_event_other: #54a6ff;
-}
-
 * {
     margin: 0;    
 }
