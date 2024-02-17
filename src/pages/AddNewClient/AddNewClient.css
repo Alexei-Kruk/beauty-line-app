@@ -39,5 +39,9 @@
   letter-spacing: 0.5px;
   width: 90%;
   height: 4.8vh;
-  margin: 20vh 0 0 0;
+  margin: 1vh 0 0 0;
+}
+
+.form-btm__margin {
+  margin-top: 14vh;
 }/*# sourceMappingURL=AddNewClient.css.map */

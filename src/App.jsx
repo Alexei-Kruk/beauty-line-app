@@ -1,7 +1,5 @@
 import React from "react";
-import { Route, Routes } from 'react-router-dom'
-import { ReactDOM } from "react-dom/client";
-import { createBrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Calendar from "./pages/Calendar/Calendar";
@@ -9,7 +7,6 @@ import Contacts from "./pages/Contacts/Contacts";
 import AddNewClient from "./pages/AddNewClient/AddNewClient";
 import WaitingList from "./pages/WaitingList/WaitingList";
 import NewsletterForClients from "./pages/NewsletterForClients/NewsletterForClients";
-
 import Footer from "./components/Footer/Footer";
 
 import "./styles/index.css";
@@ -18,20 +15,18 @@ import "./styles/colors.css";
 
 export default function App() {
     return (
-        <div className="app">
-            {/* <Routes>
-                <Route element={<Header />} />
-            </Routes> */}
-
-
-            <Header />
-                <div>
-                    {/* <Calendar /> */}
-                    {/* <Contacts /> */}
-                    <AddNewClient />
-                    {/* <WaitingList /> */}
-                </div>
-            <Footer />
-        </div>
+        <Router>
+            <div className="app">
+                <Header />
+                    <Routes>
+                        <Route path="/calendar" element={<Calendar />} />
+                        <Route path="/contacts" element={<Contacts />} />
+                        <Route path="/add-new-client" element={<AddNewClient />} />
+                        <Route path="/waiting-list" element={<WaitingList />} />
+                        <Route path="/newsletter-for-clients" element={<NewsletterForClients />} />
+                    </Routes>
+                <Footer />
+            </div>
+        </Router>
     );
 }
