@@ -38,6 +38,9 @@ export default function AddNewClient() {
                     isSubmitting,
                 }) => (
                     <form onSubmit={handleSubmit} className="form-container" >
+                        <p className="form-text">
+                            Имя клиента
+                        </p>
                         <input
                             className="form-item"
                             type="text"
@@ -48,6 +51,9 @@ export default function AddNewClient() {
                             // value={values.email}
                         />
                         {/* {errors.email && touched.email && errors.email} */}
+                        <p className="form-text">
+                            Номер телефона клиента
+                        </p>
                         <input
                             className="form-item"
                             type="number"
@@ -58,15 +64,21 @@ export default function AddNewClient() {
                             // value={values.password}
                         />
                         {/* {errors.password && touched.password && errors.password} */}
+                        <p className="form-text">
+                            Оказываемая услуга
+                        </p>
                         <input
                             className="form-item"
-                            type="text"
+                            type="check-box"
                             name="service"
                             placeholder="Услуга"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             // value={values.password}
                         />
+                        <p className="form-text">
+                            Дата
+                        </p>
                         <input
                             className="form-item"
                             type="text"
@@ -76,6 +88,9 @@ export default function AddNewClient() {
                             onBlur={handleBlur}
                             // value={values.password}
                         />
+                        <p className="form-text">
+                            Время
+                        </p>
                         <input
                             className="form-item"
                             type="text"
@@ -85,6 +100,9 @@ export default function AddNewClient() {
                             onBlur={handleBlur}
                             // value={values.password}
                         />
+                        <p className="form-text">
+                            Комментарий (при необходимости)
+                        </p>
                         <input
                             className="form-item"
                             type="text"

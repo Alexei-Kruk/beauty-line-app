@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Footer.css"
 
@@ -20,17 +20,29 @@ const navItems = [
 
 
 export default function Footer() {
+    const location = useLocation();
+    const [activeNavItem, setActiveNavItem] = useState(location.pathname);
+
+    const handleItemClick = (to) => {
+        setActiveNavItem(to);
+    };
+
+
     return (
         <nav className="footer-container">
             <ul className="nav-list">
                 {navItems.map((item, index) => (
-                    <li key={index} className="nav-list__item">
-                        <Link to={item.to}>
+                    <li
+                        key={index}
+                        className={`nav-list__item $\{activeNavItem === item.to ? "active" : ""}`}
+                    >
+                        <Link to={item.to} onClick={() => handleItemClick(item.to)}>
                             <img
                                 className="img"
                                 src={item.imgSrc}
                                 alt=""
                             />
+                            {activeNavItem === item.to && <div className="active-dot"></div>}
                         </Link>
                     </li>
                 ))}

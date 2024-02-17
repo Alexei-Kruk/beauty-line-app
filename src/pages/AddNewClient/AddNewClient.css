@@ -18,16 +18,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3vh;
+  padding-top: 2vh;
 }
 
 .form-item {
-  padding: 7px 15px;
-  margin: 1vh;
-  width: 60%;
-  font-size: 22px;
+  padding: 12px 15px;
+  margin: 1vh 1vh 1.5vh;
+  width: 83%;
+  font-size: 16px;
   border-radius: 10px;
-  border-color: darkgray;
+  border: 1px solid darkgray;
+}
+
+.form-text {
+  color: var(--color_text_theme);
+  font-size: 16px;
+  font-weight: 600;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 2vh;
 }
 
 .form-btn {
@@ -43,5 +52,5 @@
 }
 
 .form-btm__margin {
-  margin-top: 14vh;
+  margin-top: 2vh;
 }/*# sourceMappingURL=AddNewClient.css.map */
