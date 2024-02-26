@@ -7,15 +7,16 @@
     --bg_gradient: linear-gradient(to right bottom, #ffd0de, #ffffff);
     --bg_app_gradient: linear-gradient(to right, #ff5885, #6568ff);
 
-    --btn_color: #6568ff;
+    --btn_color_theme: #6568ff;
+    --btn_color_white: #ffffff;
     --color_dot: #6568ff;
 
-    --color_event_manicure: #ff5a5a;
-    --color_border_event_manicure: #e33232;
-    --color_event_pedicure: #ff8800;
+    --color_event_manicure: #fda0a0;
+    --color_border_event_manicure: #ff4949;
+    --color_event_pedicure: #ffb765;
     --color_border_event_pedicure: #ff6200;
-    --color_event_treatment: #78f86f;
-    --color_border_event_treatment: #0dc900;
-    --color_event_other: #54a6ff;
+    --color_event_green: #a3ff9c;
+    --color_border_event_green: #0dc300;
+    --color_event_other: #75b7ff;
     --color_border_event_other: #007bff;
 }

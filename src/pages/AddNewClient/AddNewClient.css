@@ -40,9 +40,21 @@
 }
 
 .form-btn {
-  background-color: var(--btn_color);
+  background-color: var(--btn_color_theme);
   color: var(--color_text_light);
-  border-color: var(--btn_color);
+  border: 2px solid var(--btn_color_theme);
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  width: 90%;
+  height: 4.8vh;
+  margin: 1vh 0 0 0;
+}
+
+.form-btn-white {
+  background-color: var(--btn_color_white);
+  color: var(--color_text_theme);
+  border: 2px solid var(--btn_color_theme);
   border-radius: 10px;
   font-size: 18px;
   letter-spacing: 0.5px;

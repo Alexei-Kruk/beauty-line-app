@@ -1,0 +1,41 @@
+.checkboxList-container {
+  padding: 12px 15px;
+  margin: 1vh 1vh 1.5vh;
+  width: 83%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+}
+
+.checkboxList-button {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  color: #747474;
+  margin-left: -6px;
+}
+
+.checkboxList-block {
+  margin-left: 0.5vh;
+}
+
+.checkboxList__item {
+  padding-left: 1vh;
+  font-size: 16px;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  margin: 0.4vh 0;
+  font: inherit;
+  color: var(--btn_color_theme);
+  width: 2vh;
+  height: 2vh;
+  border: 0.12vh solid var(--btn_color_theme);
+  border-radius: 6px;
+  -webkit-transform: translateY(0.8vh);
+          transform: translateY(0.8vh);
+}/*# sourceMappingURL=CheckboxListServices.css.map */

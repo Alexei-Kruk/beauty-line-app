@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Formik } from "formik";
 import "./AddNewClient.css";
+
+import CheckboxListServices from '../../components/CheckboxListServices/CheckboxListServices';
 
 
 export default function AddNewClient() {
@@ -51,6 +53,7 @@ export default function AddNewClient() {
                             // value={values.email}
                         />
                         {/* {errors.email && touched.email && errors.email} */}
+                       
                         <p className="form-text">
                             Номер телефона клиента
                         </p>
@@ -64,18 +67,13 @@ export default function AddNewClient() {
                             // value={values.password}
                         />
                         {/* {errors.password && touched.password && errors.password} */}
+                        
                         <p className="form-text">
                             Оказываемая услуга
                         </p>
-                        <input
-                            className="form-item"
-                            type="check-box"
-                            name="service"
-                            placeholder="Услуга"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            // value={values.password}
-                        />
+                        
+                        <CheckboxListServices />
+                        
                         <p className="form-text">
                             Дата
                         </p>
@@ -88,6 +86,7 @@ export default function AddNewClient() {
                             onBlur={handleBlur}
                             // value={values.password}
                         />
+                        
                         <p className="form-text">
                             Время
                         </p>
@@ -100,6 +99,7 @@ export default function AddNewClient() {
                             onBlur={handleBlur}
                             // value={values.password}
                         />
+                        
                         <p className="form-text">
                             Комментарий (при необходимости)
                         </p>
@@ -113,6 +113,7 @@ export default function AddNewClient() {
                             // value={values.password}
                         />
                         {/* {errors.password && touched.password && errors.password} */}
+                        
                         <button
                             className="form-btn form-btm__margin"
                             type="submit"
@@ -120,12 +121,13 @@ export default function AddNewClient() {
                         >
                             Записать
                         </button>
+                        
                         <button
-                            className="form-btn"
+                            className="form-btn-white"
                             type="cancel"
                             disabled={isSubmitting}
                         >
-                            Отмена
+                            Стереть
                         </button>
                     </form>
                 )}
