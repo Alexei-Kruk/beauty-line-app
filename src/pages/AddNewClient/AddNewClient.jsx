@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Formik } from "formik";
 import "./AddNewClient.css";
 
-import CheckboxListServices from '../../components/CheckboxListServices/CheckboxListServices';
+import PhoneInput from '../../components/FormItemAddNewClient/PhoneInput/PhoneInput';
+import CheckboxListServices from '../../components/FormItemAddNewClient/CheckboxListServices/CheckboxListServices';
+import DateTimeForm from '../../components/FormItemAddNewClient/DateTimeForm/DateTimeForm';
 
 
 export default function AddNewClient() {
@@ -47,7 +49,7 @@ export default function AddNewClient() {
                             className="form-item"
                             type="text"
                             name="name"
-                            placeholder="Имя"
+                            placeholder="Введите имя"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             // value={values.email}
@@ -57,16 +59,8 @@ export default function AddNewClient() {
                         <p className="form-text">
                             Номер телефона клиента
                         </p>
-                        <input
-                            className="form-item"
-                            type="number"
-                            name="phone"
-                            placeholder="Номер телефона"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            // value={values.password}
-                        />
-                        {/* {errors.password && touched.password && errors.password} */}
+
+                        <PhoneInput />
                         
                         <p className="form-text">
                             Оказываемая услуга
@@ -75,31 +69,11 @@ export default function AddNewClient() {
                         <CheckboxListServices />
                         
                         <p className="form-text">
-                            Дата
+                            Дата и время
                         </p>
-                        <input
-                            className="form-item"
-                            type="text"
-                            name="date"
-                            placeholder="Дата"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            // value={values.password}
-                        />
-                        
-                        <p className="form-text">
-                            Время
-                        </p>
-                        <input
-                            className="form-item"
-                            type="text"
-                            name="time"
-                            placeholder="Время"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            // value={values.password}
-                        />
-                        
+
+                        <DateTimeForm />
+
                         <p className="form-text">
                             Комментарий (при необходимости)
                         </p>

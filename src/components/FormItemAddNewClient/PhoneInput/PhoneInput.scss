@@ -1,0 +1,22 @@
+.phoneInput-container {
+    padding: 12px 15px;
+    margin: 1vh 1vh 1.5vh;
+    width: 83%;
+
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(151, 144, 144);
+}
+
+.maskFormPhone {
+    width: 100%;
+    border: none;
+
+    font-size: 16px;
+    color: #747474;
+    margin-left: -6px;
+}
+
+.maskFormPhone:focus {
+    outline: none;
+}

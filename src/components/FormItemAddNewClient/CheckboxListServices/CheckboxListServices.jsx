@@ -6,12 +6,6 @@ export default function CheckboxListServices() {
 
     const toggleCheckboxList = () => {
         setIsOpen(!isOpen);
-        if (!isOpen) {
-            document.body.style.overflow = 'hidden'; // Запретить прокрутку страницы
-        } else {
-            document.body.style.overflow = 'auto'; // Разрешить прокрутку страницы
-        }
-
     };
 
     return (
@@ -48,7 +42,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="manicure-removal"
+                        htmlFor="services"
                     >
                         Маникюр-снятие
                     </label>
@@ -63,7 +57,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="manicure-coating"
+                        htmlFor="services"
                     >
                         Маникюр + покрытие
                     </label>
@@ -78,7 +72,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="pedicure-treatment"
+                        htmlFor="services"
                     >
                         Педикюр-обработка
                     </label>
@@ -93,7 +87,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="pedicure-removal"
+                        htmlFor="services"
                     >
                         Педикюр-снятие
                     </label>
@@ -108,7 +102,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="pedicure-coating"
+                        htmlFor="services"
                     >
                         Педикюр + покрытие
                     </label>
@@ -123,7 +117,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="pedicure-finger-coating"
+                        htmlFor="services"
                     >
                         Педикюр пальца + покрытие
                     </label>
@@ -138,7 +132,7 @@ export default function CheckboxListServices() {
                     />
                     <label
                         className='checkboxList__item'
-                        htmlFor="pedicure-full"
+                        htmlFor="services"
                     >
                         Педикюр полностью
                     </label>
