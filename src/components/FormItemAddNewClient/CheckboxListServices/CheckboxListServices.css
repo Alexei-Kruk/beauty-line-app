@@ -25,17 +25,10 @@
 }
 
 input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: #fff;
   margin: 0.4vh 0;
-  font: inherit;
   color: var(--btn_color_theme);
   width: 2vh;
   height: 2vh;
-  border: 0.12vh solid var(--btn_color_theme);
-  border-radius: 6px;
-  -webkit-transform: translateY(0.8vh);
-          transform: translateY(0.8vh);
+  -webkit-transform: translateY(0.5vh);
+          transform: translateY(0.5vh);
 }/*# sourceMappingURL=CheckboxListServices.css.map */

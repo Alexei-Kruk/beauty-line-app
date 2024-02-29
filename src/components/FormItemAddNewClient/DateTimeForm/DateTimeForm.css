@@ -1,14 +1,18 @@
 .dateTimeForm-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 83%;
   padding: 12px 15px;
   margin: 1vh 1vh 1.5vh;
-  width: 83%;
-  font-size: 16px;
   border-radius: 10px;
   border: 1px solid rgb(151, 144, 144);
 }
 
-.dateTime__item {
-  width: 100%;
+.form-control {
   border: none;
   font-size: 16px;
 }/*# sourceMappingURL=DateTimeForm.css.map */

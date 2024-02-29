@@ -23,7 +23,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="manicure-treatment"
                         name="services"
-                        value="manicure"
+                        value="manicure-treatment"
                     />
                     <label
                         className='checkboxList__item'
@@ -38,7 +38,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="manicure-removal"
                         name="services"
-                        value="manicure"
+                        value="manicure-removal"
                     />
                     <label
                         className='checkboxList__item'
@@ -53,7 +53,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="manicure-coating"
                         name="services"
-                        value="manicure"
+                        value="manicure-coating"
                     />
                     <label
                         className='checkboxList__item'
@@ -68,7 +68,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="pedicure-treatment"
                         name="services"
-                        value="pedicure"
+                        value="pedicure-treatment"
                     />
                     <label
                         className='checkboxList__item'
@@ -83,7 +83,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="pedicure-removal"
                         name="services"
-                        value="pedicure"
+                        value="pedicure-removal"
                     />
                     <label
                         className='checkboxList__item'
@@ -98,7 +98,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="pedicure-coating"
                         name="services"
-                        value="pedicure"
+                        value="pedicure-coating"
                     />
                     <label
                         className='checkboxList__item'
@@ -113,7 +113,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="pedicure-finger-coating"
                         name="services"
-                        value="pedicure"
+                        value="pedicure-finger-coating"
                     />
                     <label
                         className='checkboxList__item'
@@ -128,7 +128,7 @@ export default function CheckboxListServices() {
                         type="checkbox"
                         id="pedicure-full"
                         name="services"
-                        value="pedicure"
+                        value="pedicure-full"
                     />
                     <label
                         className='checkboxList__item'

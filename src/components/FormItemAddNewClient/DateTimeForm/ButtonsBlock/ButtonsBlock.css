@@ -1,0 +1,12 @@
+.img-dataForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+}/*# sourceMappingURL=ButtonsBlock.css.map */
